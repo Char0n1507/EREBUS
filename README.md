@@ -1,5 +1,7 @@
 # 👁️ Erebus: AI-Powered Dark Web OSINT Tool
 
+![Erebus Banner](assets/erebus_banner.png)
+
 Erebus is an advanced OSINT tool for investigating dark web threats. It combines Tor-based crawling with local LLMs (Ollama) to find, filter, and visualize hidden service content.
 
 ## Features

@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  argus:
+    build: .
+    container_name: argus-osint
+    ports:
+      - "8501:8501"
+    environment:
+      - TOR_PROXY_URL=socks5h://127.0.0.1:9050
+      - TOR_CONTROL_PORT=9051
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434 # To access Ollama on host
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+    volumes:
+      - ./argus.db:/app/argus.db
+      - ./reports:/app/reports
+    extra_hosts:
+      - "host.docker.internal:host-gateway" # Helper for Linux to reach host
+    restart: unless-stopped
+  # Optional: Ollama service if you want it containerized (GPU required usually)
+  # ollama:
+  #   image: ollama/ollama
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - ollama_data:/root/.ollama

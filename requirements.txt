@@ -1,0 +1,14 @@
+requests==2.31.0
+pysocks==1.7.1
+beautifulsoup4==4.12.3
+streamlit==1.32.0
+ollama==0.1.6
+stem==1.8.2
+sqlalchemy==2.0.28
+networkx==3.2.1
+pyvis==0.3.2
+fake-useragent==1.5.1
+python-dotenv==1.0.1
+pandas==2.2.1
+plotly==5.19.0
+weasyprint==61.2

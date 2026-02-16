@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# Streamlit
+.streamlit/
+*.log
+
+# Project specific
+data.db
+reports/
+graphs/

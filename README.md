@@ -6,7 +6,7 @@ Erebus is an advanced OSINT tool for investigating dark web threats. It combines
 - **Tor Integration**: Automatically handles Tor connections, circuit rotation, and port detection (9050/9150).
 - **Search Engines**: Crawls multiple engines like Ahmia, Torch, and Haystak.
 - **Direct Scraping**: Scrape specific .onion URLs directly with liveness checks and form detection.
-- **AI Analysis**: Uses Ollama (LLM) to refine queries and summarize content.igations.
+- **AI Analysis**: Uses Ollama (LLM) to refine queries and summarize content.
 - **Visual Graph**: Interactive node-link diagram showing connections between findings.
 - **Artifact Detection**: Auto-extracts Emails, Crypto Addresses, SSNs, and more.
 - **Reporting**: Generates professional HTML/Markdown reports.
